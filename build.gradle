@@ -1,0 +1,42 @@
+plugins { id 'java'
+}
+apply plugin: 'application'
+group 'Lara'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    implementation 'org.testng:testng:7.0.0-beta3'
+   
+    implementation 'org.seleniumhq.selenium.tests:selenium-generated-tests:1.0.1'
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    compile 'io.rest-assured:rest-assured:3.2.0'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.testng', name: 'testng', version: '6.14.3'
+    compileJava.options.encoding = 'UTF-8'
+    compile 'org.testng:testng:6.14.3'
+    compile 'ru.stqa.selenium:webdriver-factory:4.3'
+    compile 'org.seleniumhq.selenium:selenium-server:3.141.59'
+    compile 'commons-io:commons-io:20030203.000550'
+    compile 'io.qameta.allure:allure-testng:2.8.1'
+    compile 'ru.yandex.qatools.allure:allure-testng-adaptor:1.5.4'
+    compile 'com.thoughtworks.xstream:xstream:1.4.11.1'
+    compile 'com.google.code.gson:gson-parent:2.8.5'
+    compile 'ch.qos.logback:logback-classic:1.3.0-alpha4'
+    compile 'com.google.code.gson:gson:2.8.5'
+    compile 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    compile files('src/test/resources/ojdbc-14.jar')
+    compile 'io.rest-assured:rest-assured:3.2.0'
+    compile 'org.json:json:20180813'
+    compile 'org.apache.httpcomponents:fluent-hc:4.5.3'
+    implementation 'info.cukes:cucumber-java:1.2.5'
+    implementation 'info.cukes:cucumber-testng:1.2.5'
+    testCompile 'io.rest-assured:rest-assured:3.0.2'
+    implementation 'com.jayway.jsonpath:json-path:2.4.0'
+}

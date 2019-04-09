@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="restassured">
+    <CLASSES>
+      <root url="file://C:/restassured" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://C:/restassured" />
+    </SOURCES>
+    <jarDirectory url="file://C:/restassured" recursive="false" />
+    <jarDirectory url="file://C:/restassured" recursive="false" type="SOURCES" />
+  </library>
+</component>
